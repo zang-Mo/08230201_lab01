@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!-- The DOCTYPE declaration defines this document as an HTML5 document -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samtse College of Education</title>
+
+    <!-- Internal CSS -->
+    <style>
+        /* Reset browser default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Top bar container */
+        .topbar {
+            background-color: #333;   /* dark background */
+            padding: 10px;
+        }
+
+        /* Navigation links inside topbar */
+        .topbar .nav-links {
+            list-style: none;         /* remove bullet points */
+            display: flex;            /* arrange items horizontally */
+            justify-content: flex-end;/* align items to right */
+        }
+
+        /* Each list item */
+        .topbar .nav-links li {
+            margin-left: 20px;        /* spacing between links */
+        }
+
+        /* Style links */
+        .topbar .nav-links a {
+            color: white;             /* white text */
+            text-decoration: none;    /* remove underline */
+            font-size: 14px;
+        }
+
+        /* Hover effect */
+        .topbar .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main navigation bar with logo */
+        .main-nav {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background-color: #f8f8f8;
+        }
+
+        .logo-container img {
+            margin-right: 20px;
+        }
+
+        .nav-section {
+            margin-right: 25px;
+            text-align: center;
+        }
+
+        .nav-section a {
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .nav-section p {
+            font-size: 12px;
+            color: #666;
+        }
+
+        /* Special red button */
+        .btn-red {
+            background-color: red;
+            color: white !important;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* Banner */
+        .banner {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        /* Main content styling */
+        .main-content {
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .video-container {
+            flex: 1;
+        }
+
+        .greetings {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top navigation bar section -->
+    <div class="topbar">
+        <ul class="nav-links">
+            <!-- Unordered list for navigation links -->
+            <li><a href="#">People</a></li>
+            <li><a href="#">Library (Intranet)</a></li>
+            <li><a href="#">Announcement</a></li>
+            <li><a href="#">RUB Policy Documents</a></li>
+            <li><a href="#">Downloads</a></li>
+            <li><a href="#">Help Desk</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Main navigation section with logo and links -->
+    <div class="main-nav">
+        <!-- Logo container -->
+        <div class="logo-container">
+            <img src="https://www.sce.edu.bt/wp-content/uploads/2025/05/SCE-LOGO-EDIT1.png" 
+                 alt="SCE Logo" 
+                 class="logo"
+                 width="80" 
+                 height="80">
+        </div>
+
+        <!-- Navigation sections with headings and descriptions -->
+        <div class="nav-section">
+            <a href="#">ABOUT SCE</a>
+            <p>Who we are and what we do</p>
+        </div>
+        <div class="nav-section">
+            <a href="#">PROGRAMMES</a>
+            <p>About the programmes we offer</p>
+        </div>
+        <div class="nav-section">
+            <a href="#">DEPARTMENTS</a>
+            <p>Our academic departments</p>
+        </div>
+        <div class="nav-section">
+            <a href="#">RESEARCH</a>
+            <p>Our research activities & collaborations</p>
+        </div>
+        <div class="nav-section">
+            <a href="#">ADMISSION</a>
+            <p>Admission dates and eligibility criteria</p>
+        </div>
+        <div class="nav-section">
+            <a href="#" class="btn-red">STRATEGIC PLAN</a>
+        </div>
+    </div>
+
+    <!-- Announcement banner -->
+    <div class="banner">
+        Reporting Dates for the Autumn Semester 2025
+    </div>
+
+    <!-- Main content section containing video and greetings -->
+    <div class="main-content">
+
+        <!-- Video container embedding a YouTube video -->
+        <div class="video-container">
+            <iframe width="100%" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/k3vnllIj4WE?si=_Hs_gCq94RdJGlPi" 
+                    frameborder="0" 
+                    allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Greetings section with heading and paragraph -->
+        <div class="greetings">
+            <h2>Greetings!</h2>
+            <p>
+                Samtse College of Education, founded by His Majesty the Third Druk Gyalpo Jigme Dorji Wangchuck on 29th May 1968 as a Teacher Training Institute, began with 41 students and a few educators. Since then, it has produced over 5,000 graduates with qualifications ranging from teaching certificates to master’s degrees. Guided by the values of right view, contemplation, and action, the College continues to nurture quality education for the nation.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
